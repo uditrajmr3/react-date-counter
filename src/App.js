@@ -15,7 +15,8 @@ export default function App() {
       <Step step={step} setStep={setStep} />
       <Counter step={step} count={count} setCount={setCount} />
       <p>
-        {count !== 0 && `${count} days from`} today {count >= 0 ? "is" : "was"}{" "}
+        {count !== 0 && `${count} days from`} today{" "}
+        {count >= 0 ? "is " : "was "}
         {formattedDate}
       </p>
     </div>
